@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* global styles */
+:root {
+  --primary-very-dark-magenta: hsl(300, 43%, 22%);
+  --primary-soft-pink: hsl(333, 80%, 67%);
+
+  --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, .01);
+  padding: 100px 165px;
+  position: relative;
+}
+
+.container .svg-bg-top {
+  position: absolute;
+  top: 0%;
+  right: 60%;
+  width: 374px;
+  height: 374px;
+  z-index: 1;
+}
+
+.container .svg-bg-bottom {
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  width: 1085px;
+  height: 1085px;
+  z-index: 1;
+}
+
+.container .mobile-svg-bg-top {
+  position: absolute;
+  top: -75%;
+  right: 50%;
+  width: 374px;
+  height: 374px;
+  z-index: 1;
+  display: none;
+}
+
+.container .mobile-svg-bg-bottom {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 503px;
+  height: 503px;
+  z-index: 1;
+  display: none;
+}
+
+
+.container .app {
+  width: 1110px;
+  height: auto;
+  z-index: 2;
+}
+
+.container .app .top {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .app .top .left {
+  width: 50%;
+  height: 100%;
+  padding-right: 10%;
+}
+
+.container .app .top .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container .app .top .left h1 {
+  font-size: 52px;
+  color: var(--primary-very-dark-magenta);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.container .app .top .left p {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--neutral-dark-grayish-magenta);
+  font-weight: 500;
+}
+
+.container .app .top .right .rate {
+  width: 443px;
+  height: 60px;
+  background-color: var(--neutral-light-grayish-magenta);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 30px;
+}
+
+.container .app .top .right .rate:nth-child(1) {
+  margin-right: auto;
+}
+
+.container .app .top .right .rate:nth-child(2) {
+  margin: 0 auto;
+}
+
+.container .app .top .right .rate:nth-child(3) {
+  margin-left: auto;
+}
+
+.container .app .top .right .rate .rate-left {
+  width: 115px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .app .top .right .rate .rate-right {
+  color: var(--primary-very-dark-magenta);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container .app .bottom {
+  width: 100%;
+  height: 265px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .app .bottom .card {
+  width: 350px;
+  height: 230px;
+  background: var(--primary-very-dark-magenta);
+  border-radius: 10px;
+  padding: 40px 40px 0px 30px;
+}
+
+.container .app .bottom .card:nth-child(2) {
+  align-self: center;
+}
+
+.container .app .bottom .card:nth-child(3) {
+  align-self: last baseline;
+}
+
+
+.container .app .bottom .card .card-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .app .bottom .card .card-top .card-top-left {
+  width: 40px;
+  height: 40px;
+  background: url('images/image-colton.jpg');
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.container .app .bottom .card:nth-child(2) .card-top .card-top-left {
+  background: url('images/image-irene.jpg');
+  background-size: 100% 100%;
+}
+
+.container .app .bottom .card:nth-child(3) .card-top .card-top-left {
+  background: url('images/image-anne.jpg');
+  background-size: 100% 100%;
+}
+
+.container .app .bottom .card .card-top .card-top-right h3 {
+  color: var(--neutral-light-grayish-magenta);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.container .app .bottom .card .card-top .card-top-right p {
+  color: var(--primary-soft-pink);
+  font-size: 16px;
+}
+
+.container .app .bottom .card .card-bottom {
+  color: var(--neutral-light-grayish-magenta);
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+
+.attribution {
+  margin: 20px auto;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1275px) {
+  .container {
+    padding: 80px 25px;
+  }
+
+  .container .app {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .container .app .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .container .app .top .left {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0 15%;
+  }
+
+  .container .app .top .right {
+    width: 100%;
+  }
+
+  .container .app .bottom {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  .container .svg-bg-top {
+    display: none;
+  }
+
+  .container .svg-bg-bottom {
+    display: none;
+  }
+
+  .container .mobile-svg-bg-top {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 374px;
+    height: 374px;
+    z-index: 1;
+    display: block;
+  }
+
+  .container .mobile-svg-bg-bottom {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 503px;
+    height: 503px;
+    z-index: 1;
+    display: block;
+  }
+
+  .container .app .top .left {
+    height: 100%;
+    padding: 0% 0%;
+  }
+
+  .container .app .top .left h1 {
+    font-size: 36px;
+    padding: 0 10%;
+  }
+
+  .container .app .top .right .rate {
+    width: 100%;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .container .app .bottom .card {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px 40px 30px;
+  }
+
+  .container .app .bottom .card:nth-child(2) {
+    align-self: center;
+  }
+  
+  .container .app .bottom .card:nth-child(2) {
+    align-self: center;
+  }
+
+
+}
